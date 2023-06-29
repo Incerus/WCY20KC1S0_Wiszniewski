@@ -1,0 +1,22 @@
+body{
+    background-color: #f9f9f9;
+    background-image: linear-gradient(to bottom, #00b4db, #0083b0);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    border-collapse: collapse;   
+}
+
+th, td {
+  border: 1px solid;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+a{
+    margin-left: auto;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Generuj</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/main.css">
+    </head>
+    <body>
+        <div id="generuj">
+            <h1 style="font-size: 1.5rem">Wprowadź poniższe dane</h1>
+            <form action="generuj" method="POST" id="generujForm">
+                <label for="autor" style="font-size: 1.5rem">Autor: </label>
+                <input style="font-size: 1.5rem" type="text" id="autor" name="autor" required/><br />
+                <label for="hash" style="font-size: 1.5rem">Tekst: </label>
+                <input style="font-size: 1.5rem" type="text" id="hash" name="hash" required/><br /><br />          
+                <div style="display: flex; justify-content: center; margin-top: 10px;">
+                    <input style="font-size: 1.5rem; margin-right: 5px;" type="submit" value="Generuj BASE64!" />
+                    <a href="index.html" id="powrotLink"><button style="font-size: 1.5rem">Powrót na stronę główną</button></a>
+                </div>
+        </div>
+        
+        <script>
+            document.getElementById("powrotLink").addEventListener("click", function(event) {
+              event.preventDefault();
+              window.location.href = this.href;
+            });
+        </script>
+    </body>
+</html>

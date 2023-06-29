@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.3.payara-p2 (PAYARA-3579-ff11a82; 2019-03-07T10:51:27+0530) JAXWS-RI/2.3.2 JAXWS-API/2.3.2 JAXB-RI/2.3.2 JAXB-API/2.3.2 git-revision#unknown. --><xs:schema xmlns:tns="http://WebService/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://WebService/">
+
+<xs:element name="IOException" type="tns:IOException"/>
+
+<xs:element name="generuj" type="tns:generuj"/>
+
+<xs:element name="generujResponse" type="tns:generujResponse"/>
+
+<xs:element name="pobierz" type="tns:pobierz"/>
+
+<xs:element name="pobierzResponse" type="tns:pobierzResponse"/>
+
+<xs:element name="usun" type="tns:usun"/>
+
+<xs:element name="usunResponse" type="tns:usunResponse"/>
+
+<xs:element name="wstaw" type="tns:wstaw"/>
+
+<xs:element name="wstawResponse" type="tns:wstawResponse"/>
+
+<xs:element name="wyswietl" type="tns:wyswietl"/>
+
+<xs:element name="wyswietlResponse" type="tns:wyswietlResponse"/>
+
+<xs:complexType name="usun">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="usunResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="wyswietl">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="wyswietlResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="generuj">
+<xs:sequence>
+<xs:element name="tekst" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="generujResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="pobierz">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="pobierzResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="IOException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="wstaw">
+<xs:sequence>
+<xs:element name="autor" type="xs:string" minOccurs="0"/>
+<xs:element name="hash" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="wstawResponse">
+<xs:sequence/>
+</xs:complexType>
+</xs:schema>

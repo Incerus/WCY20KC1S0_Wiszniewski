@@ -1,0 +1,32 @@
+body{
+    background-color: #f9f9f9;
+    background-image: linear-gradient(to bottom, #00b4db, #0083b0);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#main,#generuj,#wygenerowano,#tabela{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#main h1 {
+  white-space: nowrap;
+}
+
+#main .buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#main .buttons a {
+  margin-right: 10px;
+}
+
+#main .buttons a:last-child {
+  margin-right: 0;
+}
+
